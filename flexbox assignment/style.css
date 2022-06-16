@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+.h1 {
+  color: goldenrod;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 20px;
+}
+.h1:hover {
+  background-color: rgb(94, 69, 7);
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.column1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2cm;
+  width: 100%;
+}
+
+.column1 h1 {
+  color: hsl(0, 0% 95%);
+  font-size: 20px;
+  padding: 10px;
+  font-size: bold;
+}
+
+.column p {
+  color: hsla(0, 0%, 100%, 0.75%);
+  font-size: 15px;
+  padding: 12px;
+}
+
+.column2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2cm;
+  width: 100%;
+}
+
+.column2 h1 {
+  color: hsl(0, 0%, 95%);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.column2 p {
+  color: hsla(0, 0%, 100%, 0.75%);
+  font-size: 15px;
+  padding: 12px;
+}
+
+.column3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2cm;
+  width: 100%;
+}
+
+.column3 h1 {
+  color: hsl(0, 0% 95%);
+  font-size: 20px;
+  padding: 10px;
+}
+
+.column3 p {
+  color: hsla(0, 0%, 100%, 0.75%);
+  font-size: 15px;
+  padding: 12px;
+}
+
+hi {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  border: 1px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px;
+  margin-top: 80px;
+  color: black;
+  mix-blend-mode: screen;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0% 95%);
+  outline: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: pink;
+    color: lavenderblush;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: yellow;
+    color: purple;
+  }
+}
+/*max-width is from that width downwards*/
+@media (max-width: 375px) {
+  .cars {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* min-width is from that width upwards*/
+@media (min-width: 1140px) {
+  .cars {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+  }
+}
